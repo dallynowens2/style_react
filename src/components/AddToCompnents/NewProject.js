@@ -11,7 +11,7 @@ function NewProject({onAddProject}) {
     }
     
     return (
-        <div>
+        <div style={{backgroundColor: '#2b2a11'}}>
             <NewProjectForm onSaveProjectData = {saveProjectDataHandler} />
         </div>
     )

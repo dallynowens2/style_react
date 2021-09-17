@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import styles from './NewProjectForm.module.css'
 
 function NewProjectForm({onSaveProjectData}) {
     const [enteredProjectName, setEnteredProjectName] = useState('');
@@ -33,20 +34,20 @@ function NewProjectForm({onSaveProjectData}) {
 
     return (
         <form onSubmit= {submitHandler}>
-            <div>
+            <div style={{color:"white"}}>
                 <div>
-                    <label>Project Name</label>
-                    <input type='text' value={enteredProjectName} onChange={projectNameHandler}/>
+                    <label className={styles.Labeles}>Project Name</label ><br/>
+                    <input type='text' value={enteredProjectName} onChange={projectNameHandler} className={styles.textArea}/>
                 </div>
                 <div>
-                    <label>Project Language</label>
-                    <input type='text' value={enteredProjectLanguage} onChange={projectLanguageHandler}/>
+                    <label className={styles.Labeles} >Project Language</label><br/>
+                    <input type='text' value={enteredProjectLanguage} onChange={projectLanguageHandler} style={{width: "20em"}}/>
                 </div>
                 <div>
-                    <label>Project Description</label>
-                    <input type='text' value={enteredProjectDescription} onChange={projectDescriptionHandler}/>
+                    <label className={styles.Labeles}>Project Description</label><br/>
+                    <input type='text' value={enteredProjectDescription} onChange={projectDescriptionHandler} className={styles.textArea} style={{marginBottom: '15px', width: "30em"}}/>
                 </div>
-                <button type='submit'> Add New Project</button>
+                <button type='submit' className="btn btn-success" style={{marginBottom: "25px"}}> Add New Project</button>
             </div>
         </form>
     )
