@@ -1,0 +1,18 @@
+.LabelText{
+    font-size: 1.8em;
+    color: white;
+}
+
+.area{
+    align-content: left;
+}
+
+.cont{
+    align-content: center;
+}
+
+#searchIcon{
+    align-content: left;
+    color: white;
+    font-size: 2em;
+}
