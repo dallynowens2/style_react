@@ -5,6 +5,7 @@ function NewProjectForm({onSaveProjectData}) {
     const [enteredProjectName, setEnteredProjectName] = useState('');
     const [enteredProjectLanguage, setEnteredProjectLanguage] = useState('');
     const [enteredProjectDescription, setEnteredProjectDescription] = useState('');
+    const [isValid, setIsValid] = useState(true);
 
     const projectNameHandler = (event) => {
         setEnteredProjectName(event.target.value);
@@ -20,7 +21,10 @@ function NewProjectForm({onSaveProjectData}) {
     
     const submitHandler = (event) => {
         event.preventDefault();
-
+        if (enteredProjectName.trim().length === 0){
+            setIsValid(false);
+            return;
+        }
         const projectData ={
             projectName: enteredProjectName,
             projectLanguage: enteredProjectLanguage,
@@ -36,8 +40,8 @@ function NewProjectForm({onSaveProjectData}) {
         <form onSubmit= {submitHandler}>
             <div style={{color:"white"}}>
                 <div>
-                    <label className={styles.Labeles}>Project Name</label ><br/>
-                    <input type='text' value={enteredProjectName} onChange={projectNameHandler} className={styles.textArea}/>
+                    <label className={styles.Labeles} style={{color: !isValid ? 'red' : 'white' }}>Project Name</label ><br/>
+                    <input type='text' value={enteredProjectName} onChange={projectNameHandler}  style={{borderColor: !isValid ? 'red' : 'white' }} />
                 </div>
                 <div>
                     <label className={styles.Labeles} >Project Language</label><br/>
