@@ -1,15 +1,9 @@
 .backgroundImg{
-    background-image: url("./Typing.jpg");
+    background-image: url("../components/ListComponents/Typing.jpg");
 
     height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.FilterArea{
-    
-    background-color: #5B6C5D ;
-    padding: 20px;
 }

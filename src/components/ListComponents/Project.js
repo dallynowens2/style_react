@@ -1,26 +1,31 @@
-import React from 'react'
-import imageComingSoon from './image-coming-soon-placeholder.png'
+import React from "react";
+import ProjectDescriptionModal from "./ProjectDescriptionModal";
 
 function Project({ project, onDeleteClick }) {
-    const onDeleteClickHandler = (event) => {
-        onDeleteClick(event);
-    }
+  const onDeleteClickHandler = (event) => {
+    onDeleteClick(event);
+  };
 
-    return (
-        <div className="card" style={{ width: '330px', paddingLeft: "5px" }}>
-            <img src={imageComingSoon} className="card-img-top" alt="img" style={{ width: '100%', height: "60%" }} />
-            <div className="card-body">
-                <div className="card-title">
-                    {project.projectName}
-                </div>
-                <div className="card-text">
-                    {project.projectDescription}
-                </div>
-                <button class="btn btn-danger" style={{ width: '50%', alignContent: "center" }} onClick={() => onDeleteClickHandler(project)}>Delete Project</button>
-            </div>
-            
+  const path = project.photoPath;
+  const pic = require(`${path}`);
+
+  return (
+    <div>
+      <div className="card" style={{ width: "330px", paddingLeft: "5px" }}>
+        <img
+          src={pic.default}
+          className="card-img-top"
+          alt="img"
+          height="350"
+        />
+        <div className="card-body">
+          <div className="card-title">{project.projectName}</div>
+          <div className="card-text p-2 m-2">{project.projectDescription}</div>
+          <ProjectDescriptionModal project={project}/>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Project
+export default Project;

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Project from './Project.js'
 import ProjectFilter from './ProjectFilter.js'
 import styles from './ProjectList.module.css'
+import AboutComponent from '../AboutComponent/AboutComponent.js'
 
 function ProjectList({ projectList, onDelete }) {
     const [filteredProject, setFilteredProject] = useState('')
@@ -18,12 +19,16 @@ function ProjectList({ projectList, onDelete }) {
         return project.projectName.includes(filteredProject);
     });
 
-    const projectListItem = filterProjectList.map((project) => (<div className="col-lg-4 col-md-6 col-sm-12" style={{ paddingTop: "20px" }}><Project onDeleteClick={onDeleteClick} project={project} /></div>))
+    const projectListItem = filterProjectList.map((project) => (<div className="col-xl-4 col-lg-6 col-md-6 col-sm-12" style={{ paddingTop: "20px" }}><Project onDeleteClick={onDeleteClick} project={project} /></div>))
 
     return (
         <div className={styles.backgroundImg}>
+            
             <div className={styles.FilterArea}>
-                <ProjectFilter filterProject={onFilterChanged} />
+                <AboutComponent/>
+            </div>
+            <div className="justify-content-center container-fluid">
+                <h1 className="text-light display-2">Projects</h1>
             </div>
             <div className="container">
                 

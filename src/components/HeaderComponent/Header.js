@@ -25,7 +25,7 @@ function Header() {
 
 
             <div className="center-column">
-                <div className="banner-image">
+                <div className="banner-image text-center">
                     Dallyn Owens<br />
                     Portfolio
                 </div>
