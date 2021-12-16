@@ -12,7 +12,8 @@ import Header from "./components/HeaderComponent/Header";
 import ProjectList from "./components/ListComponents/ProjectList.js";
 import BuildAWordView from "./Views/BuildAWordView";
 import BinarySearchView from "./Views/BinarySearchView";
-import ArtStoreView from "./Views/ArtStoreView";
+import ArtStoreView from "./Views/ArtStoreView"
+import TimeClockView from "./Views/TimeClockView";
 import Footer from "./components/HeaderComponent/Footer";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blog/build-a-word" element={<BuildAWordView />}/>
         <Route path="/blog/binary-search" element={<BinarySearchView />}/>
         <Route path="/blog/art-store" element={<ArtStoreView/>}/>
+        <Route path="/blog/testing-time-clock" element={<TimeClockView/>}/>
       </Routes>
       <Footer />
     </div>
