@@ -14,6 +14,7 @@ import BuildAWordView from "./Views/BuildAWordView";
 import BinarySearchView from "./Views/BinarySearchView";
 import ArtStoreView from "./Views/ArtStoreView"
 import TimeClockView from "./Views/TimeClockView";
+import AWSBasicsView from "./Views/AWSBasicsView";
 import Footer from "./components/HeaderComponent/Footer";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path="/blog/binary-search" element={<BinarySearchView />}/>
         <Route path="/blog/art-store" element={<ArtStoreView/>}/>
         <Route path="/blog/testing-time-clock" element={<TimeClockView/>}/>
+        <Route path="/blog/aws-basic" element={<AWSBasicsView/>}/>
       </Routes>
       <Footer />
     </div>

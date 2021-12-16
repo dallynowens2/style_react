@@ -34,6 +34,15 @@ const ProjectData = [
         projectDescriptionFull: "This is a sampel art store made from HTML/CSS and a little bit of java script as well. It shows products in a mobile responsive way so that the columns resize depending on the screen size.",
         photoPath: "./photos/ArtStore.PNG",
         blogPosts:['art-store']
+    },
+    {
+        id: 5,
+        projectName: "AWS",
+        projectLanguage: "Cloud Computing",
+        projectDescription: "A entry into AWS and cloud computing.",
+        projectDescriptionFull: "This is a log of different things I have learned on my path of trying to get my cloud practitioner certificate for AWS",
+        photoPath: "./photos/AWS.PNG",
+        blogPosts:['aws-basic']
     }
 ]
 
