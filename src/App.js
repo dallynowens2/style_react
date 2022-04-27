@@ -15,6 +15,7 @@ import BinarySearchView from "./Views/BinarySearchView";
 import ArtStoreView from "./Views/ArtStoreView"
 import TimeClockView from "./Views/TimeClockView";
 import AWSBasicsView from "./Views/AWSBasicsView";
+import EFCView from "./Views/EFCView";
 import Footer from "./components/HeaderComponent/Footer";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path="/blog/art-store" element={<ArtStoreView/>}/>
         <Route path="/blog/testing-time-clock" element={<TimeClockView/>}/>
         <Route path="/blog/aws-basic" element={<AWSBasicsView/>}/>
+        <Route path="/blog/EFC" element={<EFCView/>}/>
       </Routes>
       <Footer />
     </div>

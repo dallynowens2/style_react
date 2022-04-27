@@ -15,7 +15,7 @@ const ProjectData = [
         projectDescription: "An Api for the mobile app to have crud operations on employee hours and other things",
         projectDescriptionFull: "An API for the mobile app Nielsen Contracting. This is used to access the database and preform crud operations on employees, and Jobs. It has authentication form Auth0 to ensure only users logged in can make calls for create update and delete",
         photoPath: "./photos/TimeClock.png",
-        blogPosts:[]
+        blogPosts:['efc']
     },
     {
         id: 3,
