@@ -24,7 +24,7 @@ const ProjectData = [
         projectDescription: "An application that is used to keep track of hours on a job for employees",
         projectDescriptionFull: "This application is the front end for users to view employee information, clock in at jobs or view jobs. This project is using Auth0 to allow the user to log in so that they can authenticate to preform certain actions.",
         photoPath: "./photos/TimeClock.png",
-        blogPosts:['testing-time-clock']
+        blogPosts:['capstone-review','testing-time-clock']
     },
     {
         id: 4,

@@ -17,6 +17,7 @@ import TimeClockView from "./Views/TimeClockView";
 import AWSBasicsView from "./Views/AWSBasicsView";
 import EFCView from "./Views/EFCView";
 import Footer from "./components/HeaderComponent/Footer";
+import CapstoneReview from "./Views/CapstoneReview";
 
 function App() {
   const [projectList, setProjectList] = useState(projectData);
@@ -49,6 +50,7 @@ function App() {
         <Route path="/blog/testing-time-clock" element={<TimeClockView/>}/>
         <Route path="/blog/aws-basic" element={<AWSBasicsView/>}/>
         <Route path="/blog/EFC" element={<EFCView/>}/>
+        <Route path="/blog/Capstone-Review" element={<CapstoneReview/>}/>
       </Routes>
       <Footer />
     </div>
