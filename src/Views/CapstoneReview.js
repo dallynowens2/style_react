@@ -54,11 +54,11 @@ const CapstoneReview = () => {
             </div>
             <h1 className="display-3 text-center">Backend Overview</h1>
             <h3 className="display-5 text-center">Related Blog Stories:</h3>
-            <a href="https://dallyn-portfolio.herokuapp.com/blog/time-clock-Planning">
+            <a href="https://dallyn-portfolio.herokuapp.com/blog/Backend">
               Backend
             </a>
             <br />
-            <a href="https://dallyn-portfolio.herokuapp.com/blog/time-clock-Planning">
+            <a href="https://dallyn-portfolio.herokuapp.com/blog/EFC">
               EFC
             </a>
             <br />
@@ -84,11 +84,11 @@ const CapstoneReview = () => {
             <img src={photo3} className="img-fluid mx-auto d-block" />
             <h1 className="display-3 text-center">Backend Overview</h1>
             <h3 className="display-5 text-center">Related Blog Stories:</h3>
-            <a href="https://dallyn-portfolio.herokuapp.com/blog/time-clock-Planning">
+            <a href="https://dallyn-portfolio.herokuapp.com/blog/testing-time-clock">
               Testing
             </a>
             <br />
-            <a href="https://dallyn-portfolio.herokuapp.com/blog/time-clock-Planning">
+            <a href="https://dallyn-portfolio.herokuapp.com/blog/Auth0">
               Authorization
             </a>
             <br />
